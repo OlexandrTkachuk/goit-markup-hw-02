@@ -31,29 +31,40 @@ ul {
     font-size: 26px;
     font-weight: 700;
     color: var(--black-color);
+    letter-spacing: 0.03em;
 }
 
 .blue-logo-part {
     color: var(--blue-color);
 }
 
-.link-nav {
+.site-nav .link {
     color: var(--black-color);
     text-decoration: none;
     list-style-type: none;
+    font-weight: 500;
+    letter-spacing: 0.02em;
 }
 
-.link-nav:hover {
+.site-nav .link:hover,
+.site-nav .link:focus {
     color: var(--blue-color);
 }
 
 .link-contacts  {
     text-decoration: none;
-    color: inherit;
+    color: rgba(255, 255, 255, 0.6);
     font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.02em;
 }
 
-.link-contacts:hover {
+.link-contacts:hover,
+.link-contacts:focus {
+    color: var(--blue-color);
+}
+
+.site-nav .link.current {
     color: var(--blue-color);
 }
 
@@ -72,6 +83,7 @@ ul {
     height: 120px;
     width: 696px;
     text-transform: uppercase;
+    letter-spacing: 0.06em;
 }
 
 .hero-btn {
@@ -82,8 +94,15 @@ ul {
     width: 200px;
     height: 50px;
     border-radius: 4px;
-    border: none;
+    border: 1px solid transparent;
     line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.hero-btn:hover {
+    background-color: #188CE8;
 }
 
 
@@ -109,11 +128,13 @@ ul {
     font-weight: 700;
     text-align: left;
     text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
 .benefits-text {
     line-height: 1.71;
     text-align: left;
+    letter-spacing: 0.03em;
 }
 
 .work-title {
@@ -121,10 +142,20 @@ ul {
     font-weight: 700;
     text-align: center;
     font-size: 36px;
+    letter-spacing: 0.03em;
 }
 
 .team {
     background-color: #F5F4FA;
+}
+
+.card {
+    width: 270px;
+    height: 368px;
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
@@ -132,6 +163,7 @@ ul {
     font-weight: 700;
     text-align: center;
     font-size: 36px;
+    letter-spacing: 0.03em;
 }
 
 .team-subtitle {
@@ -139,11 +171,13 @@ ul {
     color: var(--black-color);
     font-size: 16px;
     text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .team-text {
     text-align: center;
     font-size: 16px;
+    letter-spacing: 0.03em;
 }
 
 .footer {
@@ -156,7 +190,7 @@ ul {
 .link-contacts-footer {
     line-height: 1.71;
     font-style: normal;
-    color: inherit;
+    color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
 
@@ -166,6 +200,7 @@ ul {
     font-weight: 900;
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
+    letter-spacing: 0.03em;
 }
 
 .company-address {
@@ -179,14 +214,9 @@ ul {
     max-width: 1170px;
 }
 
-.btn-filter {
-    display: flex;
-    justify-content: center;
-}
-
-button {
+.button {
     font-weight: 500;
-    line-height: 1.39;
+    line-height: 1.62;
     font-size: 16px;
     margin: 8px;
     cursor: pointer;
@@ -194,18 +224,23 @@ button {
     color: var(--black-color);
     border-radius: 4px;
     padding: 6px 22px;
-    border-style: none;
+    border: 1px solid transparent;
+    letter-spacing: 0.03em;
 }
 
-button:hover {
+.button:hover,
+.button:focus {
     background-color: var(--blue-color);
     color: var(--white-color);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.galery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.btn-filter .button.current {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .photo-card {
@@ -213,19 +248,15 @@ button:hover {
 }
 
 .photo-card h2 {
-    display: flexbox;
-    justify-content: center;
     color:  var(--black-color);
     font-size: 18px;
     line-height: 2;
     font-weight: 700;
-    margin: 20px 24px 4px;
+    letter-spacing: 0.06em;
 }
 
 .photo-card p {
-    display: flexbox;
-    justify-content: center;
-    margin: 0 24px 20px 24px;
     line-height: 1.88;
     font-size: 16px;
+    letter-spacing: 0.03em;
 }
