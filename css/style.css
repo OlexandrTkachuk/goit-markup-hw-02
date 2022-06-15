@@ -13,6 +13,8 @@ body {
     width: 100%;
     max-width: 1600px;
     margin: auto;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
 }
 
 
@@ -31,7 +33,7 @@ ul {
     font-size: 26px;
     font-weight: 700;
     color: var(--black-color);
-    letter-spacing: 0.03em;
+    line-height: 1.19;
 }
 
 .blue-logo-part {
@@ -80,7 +82,6 @@ ul {
     text-align: center;
     font-weight: 900;
     line-height: 1.36;
-    height: 120px;
     width: 696px;
     text-transform: uppercase;
     letter-spacing: 0.06em;
@@ -128,13 +129,12 @@ ul {
     font-weight: 700;
     text-align: left;
     text-transform: uppercase;
-    letter-spacing: 0.03em;
+    font-size: 14px;
 }
 
 .benefits-text {
     line-height: 1.71;
     text-align: left;
-    letter-spacing: 0.03em;
 }
 
 .work-title {
@@ -142,7 +142,7 @@ ul {
     font-weight: 700;
     text-align: center;
     font-size: 36px;
-    letter-spacing: 0.03em;
+    line-height: 1.16;
 }
 
 .team {
@@ -163,7 +163,7 @@ ul {
     font-weight: 700;
     text-align: center;
     font-size: 36px;
-    letter-spacing: 0.03em;
+    line-height: 1.16;
 }
 
 .team-subtitle {
@@ -171,7 +171,7 @@ ul {
     color: var(--black-color);
     font-size: 16px;
     text-align: center;
-    letter-spacing: 0.03em;
+    line-height: 1.18;
 }
 
 .team-text {
@@ -184,7 +184,6 @@ ul {
     width: 100%;
     height: 252px;
     background-color: #2F303A;
-
 }
 
 .link-contacts-footer {
@@ -200,7 +199,7 @@ ul {
     font-weight: 900;
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
-    letter-spacing: 0.03em;
+    line-height: 1.19;
 }
 
 .company-address {
@@ -215,6 +214,7 @@ ul {
 }
 
 .button {
+    font-family: inherit;
     font-weight: 500;
     line-height: 1.62;
     font-size: 16px;
@@ -225,7 +225,6 @@ ul {
     border-radius: 4px;
     padding: 6px 22px;
     border: 1px solid transparent;
-    letter-spacing: 0.03em;
 }
 
 .button:hover,
@@ -258,5 +257,4 @@ ul {
 .photo-card p {
     line-height: 1.88;
     font-size: 16px;
-    letter-spacing: 0.03em;
 }
